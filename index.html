@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Timeless Scroll - A Visual Journey Through History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#ancient">Ancient Era</a></li>
+            <li><a href="#medieval">Medieval Era</a></li>
+            <li><a href="#modern">Modern Era</a></li>
+        </ul>
+        <button id="viewToggle" class="view-toggle">Switch to Horizontal View</button>
+    </nav>
+    <script>
+        document.getElementById('viewToggle').addEventListener('click', function() {
+            const timeline = document.querySelector('.timeline');
+            const isHorizontal = timeline.classList.toggle('horizontal');
+            this.textContent = isHorizontal ? 'Switch to Vertical View' : 'Switch to Horizontal View';
+        });
+    </script>
+
+    <header class="hero">
+        <h1>The Timeless Scroll</h1>
+        <p>A Visual Journey Through History</p>
+    </header>
+
+    <main class="timeline">
+        <section id="ancient" class="era">
+            <h2>Ancient Era</h2>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Ancient Egypt</h3>
+                    <p>The pyramids rise from the desert sands, monuments to the ingenuity of the pharaohs. Along the life-giving Nile, a civilization flourished for millennia, leaving behind a legacy of art, architecture, and mystical hieroglyphs that continue to captivate our imagination.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Mesopotamia</h3>
+                    <p>Between the Tigris and Euphrates rivers, humanity's first cities emerged. The Sumerians, Babylonians, and Assyrians developed writing, law codes, and sophisticated irrigation systems that laid the foundation for modern civilization.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Ancient Greece</h3>
+                    <p>From the marble columns of Athens to the battlefields of Thermopylae, Greek civilization gave birth to democracy, philosophy, and the Olympic Games. Their pursuit of knowledge and beauty shaped the Western world.</p>
+                </div>
+            </div>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Roman Empire</h3>
+                    <p>Roads stretched across continents as Rome built an empire that would define power for centuries. Their legacy lives on in our languages, laws, and architecture, a testament to their extraordinary achievement in unifying the ancient world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="medieval" class="era">
+            <h2>Medieval Era</h2>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Middle Ages</h3>
+                    <p>Knights and nobles ruled from towering stone castles, while monasteries preserved ancient knowledge. The medieval period saw the rise of feudalism, the Crusades, and the flourishing of Gothic architecture that reached toward heaven with unprecedented ambition.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modern" class="era">
+            <h2>Modern Era</h2>
+            <div class="history-card">
+                <div class="card-content">
+                    <h3>Industrial Revolution</h3>
+                    <p>Steam engines roared to life as cities grew into metropolises. Factories and railroads transformed the landscape, while new inventions and scientific discoveries ushered in an age of unprecedented technological progress and social change.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="quote-scroll">
+        <p>"History is not was, it is."</p>
+        <p>"Those who cannot remember the past are condemned to repeat it."</p>
+        <p>"History is written by the victors."</p>
+    </div>
+</body>
+</html>
